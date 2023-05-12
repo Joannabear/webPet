@@ -301,7 +301,7 @@
             draw: function() {
                 if (status.current == status.game || room.r_sel == room.living || room.r_sel == room.bed) {
                     const edge = new Image();
-                    edge.src = "sourceImage/grow.png";
+                    edge.src = "sourceimage/grow.png";
                     ctx.drawImage(edge, this.sx, this.sy, this.sw, this.sh, this.dx, this.dy, this.dw, this.dh);
                 }
             }
@@ -321,7 +321,7 @@
                     this.dx = 680;
                     for (var i = 0; i < growth; i++) {
                         const growth = new Image();
-                        growth.src = "sourceImage/growth.png";
+                        growth.src = "sourceimage/growth.png";
                         ctx.drawImage(growth, this.sx, this.sy, this.sw, this.sh, this.dx, this.dy, this.dw, this.dh);
                         this.dx += 9.5;
                     }
